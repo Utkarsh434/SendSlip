@@ -1,6 +1,8 @@
 import "./Template1.css";
 
 const Template1 = ({ data }) => {
+  // console.log(data);
+  
   return (
     <div className="template1 border rounded mx-auto my-4 px-sm-4 py-3 w-100">
       {/* Header section  */}

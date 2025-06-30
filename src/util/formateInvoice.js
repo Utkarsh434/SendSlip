@@ -16,7 +16,7 @@ export const formatInvoiceData = (invoiceData) =>{
     const subtotal = items.reduce((acc,item)=>acc+(item.qty*item.amount), 0);
     const taxAmount = subtotal*(tax/100);
     const total = subtotal+taxAmount;
-
+    
 
     return {
         title,

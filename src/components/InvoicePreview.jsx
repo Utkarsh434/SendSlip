@@ -4,6 +4,8 @@ import {templateComponents} from "../util/InvoiceTemplates"
 
 const InvoicePreview = forwardRef(({invoiceData,template},ref)=>{
     
+    // console.log(invoiceData);
+    
     const formattedData = formatInvoiceData(invoiceData);
     // console.log(formattedData);
     

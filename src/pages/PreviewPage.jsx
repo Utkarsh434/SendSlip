@@ -40,7 +40,7 @@ const PreviewPage = () => {
       formData.append("email",customerEmail);
       const token = await getToken();
       const response = await sendInvoice(baseURL,formData,token);
-      console.log(response);
+      // console.log(response);
       
       if(response.status===200){
         toast.success("Email send Successfully.");
@@ -78,7 +78,14 @@ const PreviewPage = () => {
       };
 
       const token = await getToken();
+      // console.log(`payload->`);
+      // console.log(payload);
+      
       const response = await saveInvoice(baseURL, payload,token);
+      // console.log("response");
+      // console.log(response.data);
+      
+      
       if (response.status === 200) {
         toast.success("Invoice saved successfully.");
         navigate("/dashboard");

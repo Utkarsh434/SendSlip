@@ -1,7 +1,7 @@
 import axios from "axios"
 
 export const saveInvoice = (baseUrl ,payload,token) =>{
-    return axios.post(`${baseUrl}/invoices`,payload , {headers:{Authorization:`Bearer ${token}`}});
+    return axios.post(`${baseUrl}/invoices`, payload , {headers:{Authorization:`Bearer ${token}`}});
 }
 
 export const getAllInvoices = (baseUrl,token) =>{

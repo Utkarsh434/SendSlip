@@ -22,7 +22,7 @@ export const AppContextProvider = (props) => {
 
   const baseURL = "http://localhost:8080/api";
 
-  
+
   const contextValue = {
     baseURL,
     invoiceData,

@@ -18,6 +18,10 @@ const UserSyncHandler = () => {
 
       try {
         const token = await getToken();
+        console.log(token);
+        console.log("GAP");
+        console.log(user.id);
+        
 
         const userData = {
           clerkId: user.id,
@@ -30,7 +34,7 @@ const UserSyncHandler = () => {
         await axios.post(baseURL + "/users", userData, {
           headers: { Authorization: `Bearer ${token}` },
         });
-
+        
         setSynced(true); //prevent re-posting
       } catch (error) {
         console.error("User sync failed", error);

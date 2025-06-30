@@ -18,9 +18,9 @@ const UserSyncHandler = () => {
 
       try {
         const token = await getToken();
-        console.log(token);
-        console.log("GAP");
-        console.log(user.id);
+        // console.log(token);
+        // console.log("GAP");
+        // console.log(user.id);
         
 
         const userData = {

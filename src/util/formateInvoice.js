@@ -20,26 +20,26 @@ export const formatInvoiceData = (invoiceData) =>{
 
     return {
         title,
-        companyName:company.name,
-        companyAddress:company.address,
-        companyPhone:company.phone,
+        companyName:company?.name,
+        companyAddress:company?.address,
+        companyPhone:company?.phone,
         companyLogo:logo,
 
-        invoiceNumber:invoice.number,
-        invoiceDate:invoice.date,
-        paymentDate: invoice.dueDate,
+        invoiceNumber:invoice?.number,
+        invoiceDate:invoice?.date,
+        paymentDate: invoice?.dueDate,
 
-        accountName:account.name,
-        accountNumber:account.number,
-        accountIfsccode:account.ifsccode,
+        accountName:account?.name,
+        accountNumber:account?.number,
+        accountIfsccode:account?.ifsccode,
 
-        billingName:billing.name,
-        billingAddress:billing.address,
-        billingPhone:billing.phone,
+        billingName:billing?.name,
+        billingAddress:billing?.address,
+        billingPhone:billing?.phone,
 
-        shippingName:shipping.name,
-        shippingAddress:shipping.address,
-        shippingPhone:shipping.phone,
+        shippingName:shipping?.name,
+        shippingAddress:shipping?.address,
+        shippingPhone:shipping?.phone,
 
         currencySymbol,
         tax,

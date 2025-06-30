@@ -78,12 +78,12 @@ const PreviewPage = () => {
       };
 
       const token = await getToken();
-      // console.log(`payload->`);
-      // console.log(payload);
+      console.log(`payload->`);
+      console.log(payload);
       
       const response = await saveInvoice(baseURL, payload,token);
-      // console.log("response");
-      // console.log(response.data);
+      console.log("response");
+      console.log(response.data);
       
       
       if (response.status === 200) {
